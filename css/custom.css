@@ -1,7 +1,20 @@
 .title-wrapper  {
-  height: 260px;
   display: flex;
   align-items: center;
+  margin-top: 40px;
+  height: 70px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .title-wrapper  {
+    height: 260px;
+    margin-top: 10%;
+  }
+}
+
+.profile-pic__super-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .profile-pic__wrapper {
@@ -15,4 +28,32 @@
 .profile-pic {
   max-width: 100%;
   max-height: 100%;
+}
+
+.description {
+  margin-top: 50px;
+}
+
+.toolbelt-list {
+  list-style: none;
+}
+
+.toolbelt-list__second-level {
+  display: flex;
+  list-style: none;
+}
+
+.toolbelt-list__second-level-item {
+  padding: 5px;
+}
+
+.toolbelt-list__icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile-pic__super-wrapper {
+    display: block;
+  }
 }
