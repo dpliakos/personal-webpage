@@ -1,11 +1,18 @@
 .title-wrapper  {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 40px;
   height: 70px;
 }
 
-@media only screen and (min-width: 1024px) {
+.title__link {
+  width: 100%;
+  display: block;
+}
+
+
+@media only screen and (min-width: 750px) {
   .title-wrapper  {
     height: 260px;
     margin-top: 10%;
@@ -52,7 +59,7 @@
   height: 40px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 750px) {
   .profile-pic__super-wrapper {
     display: block;
   }
