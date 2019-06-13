@@ -14,6 +14,7 @@
     "gatsby-plugin-sharp": "^2.1.4",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-sharp": "^2.1.21",
+    "js-logger": "^1.6.0",
     "node-sass": "^4.12.0",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
@@ -23,7 +24,9 @@
   },
   "devDependencies": {
     "chroma-sass": "^1.2.6",
+    "gatsby-plugin-typescript": "^2.0.15",
     "prettier": "^1.18.2",
+    "typescript": "^3.5.2",
     "typey": "^1.1.2"
   },
   "keywords": [
@@ -36,6 +39,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "type-check": "tsc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

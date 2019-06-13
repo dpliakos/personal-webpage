@@ -2,18 +2,27 @@
   The basic layout.Contains the SEO and basic styles
 */
 
-import React from "react"
+import React from "react";
+import Logger from "js-logger";
 // import { Link } from "gatsby"
 //
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-const LayoutBase = (props) => (
-  <div>
-    {props.children}
-  </div>
-);
+interface LayoutBaseProps {
+  children: any
+}
+
+Logger.useDefaults();
+
+const LayoutBase = (props: LayoutBaseProps) => {
+  return (
+    <div>
+      {props.children}
+    </div>
+  );
+}
 
 export default LayoutBase;
 
