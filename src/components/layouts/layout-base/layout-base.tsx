@@ -4,6 +4,11 @@
 
 import React from "react";
 import Logger from "js-logger";
+import CSSPresets from './../css-presets/css-presets';
+import Typography from './../typography/typography';
+import Header from "./../../components/header/header";
+import "./layout-base.scss";
+
 // import { Link } from "gatsby"
 //
 // import Layout from "../components/layout"
@@ -19,6 +24,9 @@ Logger.useDefaults();
 const LayoutBase = (props: LayoutBaseProps) => {
   return (
     <div>
+      <CSSPresets />
+      <Typography />
+      <Header />
       {props.children}
     </div>
   );

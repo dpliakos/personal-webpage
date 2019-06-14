@@ -25,6 +25,7 @@
   "devDependencies": {
     "chroma-sass": "^1.2.6",
     "gatsby-plugin-typescript": "^2.0.15",
+    "normalize-scss": "^7.0.1",
     "prettier": "^1.18.2",
     "typescript": "^3.5.2",
     "typey": "^1.1.2"

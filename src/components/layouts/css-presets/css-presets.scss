@@ -1,0 +1,22 @@
+@import "normalize-scss";
+@import "./../../../../node_modules/chroma-sass/sass/chroma";
+
+// Define the default color scheme. 
+$chroma: define-default-color-scheme('dpliakos-default');
+
+// Add colors to the default color scheme. 
+$chroma: add-colors((
+  'white':       #fff, 
+  'black':       #000, 
+  'blue':        #242424, 
+  'red':         #c00, 
+  'grey':        #777, 
+ 
+  // Define a primary highlight color that has the value of our "blue" color. 
+  // Note: if blue was specified without quotes, Chroma would interpret that as 
+  // the color keyword blue and not a reference to the "blue" color name. 
+  primary:    'black', 
+  secondary:  'red',
+  tertiary:   'grey'
+));
+ 
