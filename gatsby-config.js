@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
@@ -30,15 +30,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-      {
-        resolve: `gatsby-plugin-sass`,
-        options: {
-          includePaths: [
-            path.resolve(__dirname, 'src', 'components'),
-            path.resolve(__dirname, 'css')
-          ]
-        },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [
+          path.resolve(__dirname, "src", "components"),
+          path.resolve(__dirname, "css"),
+        ],
       },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -1,12 +1,10 @@
-import React from "react";
-
+import React from "react"
 
 class Header extends React.PureComponent {
-    render() {
-        return (
-            <div> this is a line </div>
-        );
-    }
+  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
+  render() {
+    return <div> this is a line </div>
+  }
 }
 
-export default Header;
+export default Header

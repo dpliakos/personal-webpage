@@ -1,9 +1,7 @@
 // import React from "react"
 
-import IndexPage from "./../components/pages/index/index";
-export default IndexPage;
-
-
+import IndexPage from "./../components/pages/index/index"
+export default IndexPage
 
 // import { Link } from "gatsby"
 //
@@ -24,7 +22,6 @@ export default IndexPage;
 //   </Layout>
 // )
 //
-
 
 // "node_modules/breakpoint-sass/stylesheets",
 //           "node_modules/chroma-sass/sass",

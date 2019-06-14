@@ -2,12 +2,12 @@
   The basic layout.Contains the SEO and basic styles
 */
 
-import React from "react";
-import Logger from "js-logger";
-import CSSPresets from './../css-presets/css-presets';
-import Typography from './../typography/typography';
-import Header from "./../../components/header/header";
-import "./layout-base.scss";
+import React from "react"
+import Logger from "js-logger"
+import CSSPresets from "./../css-presets/css-presets"
+import Typography from "./../typography/typography"
+import Header from "./../../components/header/header"
+import "./layout-base.scss"
 
 // import { Link } from "gatsby"
 //
@@ -16,10 +16,11 @@ import "./layout-base.scss";
 // import SEO from "../components/seo"
 
 interface LayoutBaseProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children: any
 }
 
-Logger.useDefaults();
+Logger.useDefaults()
 
 const LayoutBase = (props: LayoutBaseProps) => {
   return (
@@ -29,11 +30,10 @@ const LayoutBase = (props: LayoutBaseProps) => {
       <Header />
       {props.children}
     </div>
-  );
+  )
 }
 
-export default LayoutBase;
-
+export default LayoutBase
 
 // ---------------
 // layout:
@@ -90,7 +90,6 @@ export default LayoutBase;
 // }
 //
 // export default Layout
-
 
 // ----------------- seo
 /**

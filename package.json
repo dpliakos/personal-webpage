@@ -23,7 +23,13 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "chroma-sass": "^1.2.6",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
     "gatsby-plugin-typescript": "^2.0.15",
     "normalize-scss": "^7.0.1",
     "prettier": "^1.18.2",
@@ -37,7 +43,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "lint": "eslint --ignore-path .gitignore ./src --ext ts --ext tsx --ext js --ext jsx",
+    "format": "eslint --ignore-path .gitignore ./src --ext ts --ext tsx --ext js --ext jsx --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "type-check": "tsc",

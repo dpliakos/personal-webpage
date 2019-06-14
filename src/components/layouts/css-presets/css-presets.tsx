@@ -3,11 +3,9 @@
     for the project.
 */
 
-import React from 'react';
-import './css-presets.scss';
+import React from "react"
+import "./css-presets.scss"
 
-const CSSPresets = () => (
-    <></>
-)
+const CSSPresets = () => <></>
 
-export default CSSPresets;
+export default CSSPresets
