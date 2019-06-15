@@ -1,13 +1,19 @@
 import React from "react";
 
-import LayoutBase from "./../../layouts/layout-base/layout-base";
+import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-standard-page";
 
-const IndexPage = (props: any) => {
+const SkillsPage = (props: any) => {
   return (
-    <LayoutBase headerData={props.headerData}>
-      <div> skills </div>
-    </LayoutBase>
+    <LayoutStandardPage headerData={props.headerData} title="Skills">
+      <p>
+        Front end dev: <br />
+        <ul>
+          <li>ReactJS</li>
+          <li> Sass </li>
+        </ul>
+      </p>
+    </LayoutStandardPage>
   );
 };
 
-export default IndexPage;
+export default SkillsPage;

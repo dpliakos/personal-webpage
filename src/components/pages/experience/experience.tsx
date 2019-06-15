@@ -1,13 +1,21 @@
 import React from "react";
 
-import LayoutBase from "./../../layouts/layout-base/layout-base";
+import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-standard-page";
 
-const IndexPage = (props: any) => {
+const ExperiencePage = (props: any) => {
   return (
-    <LayoutBase headerData={props.headerData}>
-      <div> experience </div>
-    </LayoutBase>
+    <LayoutStandardPage headerData={props.headerData} title="Experience">
+      <p>
+        Google Summer Of Code  - Etetoolkit/Treematcher
+      </p>
+      <p>
+        PointBlank
+      </p>
+      <p>
+        Bear in mind
+      </p>
+    </LayoutStandardPage>
   );
 };
 
-export default IndexPage;
+export default ExperiencePage;

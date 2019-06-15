@@ -28,6 +28,10 @@
     &--name {
       @include typeset(hightlighted-title);
     }
+
+    &--description {
+      @include padding-top(.5);
+    }
   }
 
   &__description-line {

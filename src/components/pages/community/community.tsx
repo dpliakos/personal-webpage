@@ -1,13 +1,14 @@
 import React from "react";
 
-import LayoutBase from "./../../layouts/layout-base/layout-base";
+import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-standard-page";
 
-const IndexPage = (props: any) => {
+const SkillsPage = (props: any) => {
   return (
-    <LayoutBase headerData={props.headerData}>
-      <div> community </div>
-    </LayoutBase>
+    <LayoutStandardPage headerData={props.headerData} title="Community">
+      <p> Lambdaspace </p>
+      <p> IEEE ATEITH Student Branch </p>
+    </LayoutStandardPage>
   );
 };
 
-export default IndexPage;
+export default SkillsPage;

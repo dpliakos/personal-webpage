@@ -3,6 +3,7 @@ import Logger from "js-logger";
 import { graphql } from "gatsby";
 
 import "./personal-info.scss";
+import ProfileImage from "./../../../images/profile.jpg";
 
 export interface Person {
   name: string;
@@ -35,7 +36,8 @@ const PersonaInfo = (props: PersonalInfoProps) => {
       <div className="personal-info__image-wrapper">
         <img
           className="personal-info__image"
-          src={props.person ? props.person.image.url : ""}
+          // src={props.person ? props.person.image.url : ""}
+          src={ProfileImage}
           alt={
             props.person && props.person.image.alt ? props.person.image.alt : ""
           }
