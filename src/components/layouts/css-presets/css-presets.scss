@@ -1,1 +1,10 @@
 @import "./../css-init/css-init";
+
+
+h1 {
+  @include typeset(super-title);
+}
+
+p {
+  @include typeset(text);
+}

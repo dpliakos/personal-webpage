@@ -13,4 +13,9 @@ body {
 
 .layout-base {
   display: flex;
+
+  &__content  {
+    width: 60%;
+    display: flex;
+  }
 }

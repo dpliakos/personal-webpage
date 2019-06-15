@@ -1,12 +1,12 @@
 import React from "react";
 
-import LayoutBase from "./../../layouts/layout-base/layout-base";
+import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-standard-page";
 
 const IndexPage = (props: any) => {
   return (
-    <LayoutBase headerData={props.headerData}>
-      <div> education </div>
-    </LayoutBase>
+    <LayoutStandardPage headerData={props.headerData} >
+      <p>Alexander Technological institute of Thessaloniki 2015 - Now</p>
+    </LayoutStandardPage>
   );
 };
 

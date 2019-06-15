@@ -20,10 +20,8 @@ const LayoutBase = (props: LayoutBaseProps) => {
   return (
     <div className="layout-base">
       <CSSPresets />
-      <Header headerData={props.headerData} className="layout-base__header"/>
-      <section className="layout-base__content">
-        {props.children}
-      </section>
+      <Header headerData={props.headerData} className="layout-base__header" />
+      <section className="layout-base__content">{props.children}</section>
     </div>
   );
 };
