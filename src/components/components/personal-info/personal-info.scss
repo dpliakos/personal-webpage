@@ -2,6 +2,19 @@
 
 .personal-info {
 
+  &__image-wrapper {
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+    width:100%;
+    height: auto;
+  }
+
   &__text{
     @include margin-top(1);
     @include margin-bottom(1);
