@@ -1,7 +1,7 @@
 import React from "react";
-import Logger from "js-logger";
 
 import PersonalInfo, { Person } from "./../personal-info/personal-info";
+import NavigationBar from "./../navigation-bar/navigation-bar";
 
 import "./header.scss";
 
@@ -14,16 +14,16 @@ interface HeaderProps {
 class Header extends React.PureComponent<HeaderProps, {}> {
   // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   render() {
-    const person = this.props.headerData.person;
+    const person: Person = this.props.headerData.person;
 
-    Logger.debug("HeaderProps.person", person);
-    Logger.debug("HeaderProps: ", this.props);
     return (
       <header role="banner" className="header">
-        <div className="header__personal-info">
-          <PersonalInfo person={person} />
+        <div className="header__contents-wrapper">
+          <div className="header__personal-info">
+            <PersonalInfo person={person} />
+          </div>
+          <NavigationBar />
         </div>
-        <nav></nav>
       </header>
     );
   }

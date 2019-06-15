@@ -1,0 +1,13 @@
+@import "css-init";
+
+.navigation-bar {
+  color: color("color-text-reverse"); 
+  text-align: right;
+
+  &__item {
+    @include typeset(hightlighted-text);
+    color:color('color-text-reverse');
+    text-decoration: none;
+    display: block;
+  }
+}
