@@ -8,7 +8,7 @@ import IndexPage from "./../components/pages/index/index";
 const IndexWrapper = (props: any) => {
   Logger.debug("IndexWrapperpropa", props);
 
-  const person = props.data.allDataJson.edges[0].node;
+  const person = props.data.allPersonalInfoJson.nodes[0];
 
   const headerData = {
     person: person,
@@ -19,17 +19,10 @@ const IndexWrapper = (props: any) => {
 export default IndexWrapper;
 
 export const query = graphql`
-  {
-    allDataJson {
-      edges {
-        node {
-          name
-          description
-          image {
-            url
-            alt
-          }
-        }
+  query {
+    allPersonalInfoJson {
+      nodes {
+        ...PersonalInfo
       }
     }
   }
@@ -53,11 +46,3 @@ export const query = graphql`
 //     <Link to="/page-2/">Go to page 2</Link>
 //   </Layout>
 // )
-//
-
-// "node_modules/breakpoint-sass/stylesheets",
-//           "node_modules/chroma-sass/sass",
-//           "node_modules/support-for/sass",
-//           "node_modules/typey/stylesheets",
-//           "src/components",
-// "src"

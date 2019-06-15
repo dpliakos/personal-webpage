@@ -1,5 +1,6 @@
 import React from "react";
 import Logger from "js-logger";
+import { graphql } from "gatsby";
 
 export interface Person {
   name: string;
@@ -49,3 +50,14 @@ const PersonaInfo = (props: PersonalInfoProps) => {
 };
 
 export default PersonaInfo;
+
+export const query = graphql`
+  fragment PersonalInfo on PersonalInfoJson {
+    name
+    description
+    image {
+      url
+      alt
+    }
+}
+`;
