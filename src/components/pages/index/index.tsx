@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 
-import LayoutBase from "./../../layouts/layout-base/layout-base"
+import LayoutBase from "./../../layouts/layout-base/layout-base";
 
-const IndexPage = () => {
+const IndexPage = (props: any) => {
   return (
-    <LayoutBase>
+    <LayoutBase headerData={props.headerData}>
       <div> index </div>
     </LayoutBase>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

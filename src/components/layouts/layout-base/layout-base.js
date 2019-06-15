@@ -1,40 +1,28 @@
+"use strict";
 /*
   The basic layout.Contains the SEO and basic styles
 */
-
-import React from "react";
-import Logger from "js-logger";
-import CSSPresets from "./../css-presets/css-presets";
-import Header from "./../../components/header/header";
-import "./layout-base.scss";
-
-interface LayoutBaseProps {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  children: any;
-  headerData: any;
-}
-
-Logger.useDefaults();
-
-const LayoutBase = (props: LayoutBaseProps) => {
-  return (
-    <div>
-      <CSSPresets />
-      <Header headerData={props.headerData} />
+exports.__esModule = true;
+var react_1 = require("react");
+var js_logger_1 = require("js-logger");
+var css_presets_1 = require("./../css-presets/css-presets");
+var header_1 = require("./../../components/header/header");
+require("./layout-base.scss");
+js_logger_1["default"].useDefaults();
+var LayoutBase = function (props) {
+    return (<div>
+      <css_presets_1["default"] />
+      <header_1["default"] headerData={props.headerData}/>
       {props.children}
-    </div>
-  );
+    </div>);
 };
-
-export default LayoutBase;
-
+exports["default"] = LayoutBase;
 // ---------------
 // import { Link } from "gatsby"
 //
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
-
 // layout:
 /**
  * Layout component that queries for data
@@ -42,7 +30,6 @@ export default LayoutBase;
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
-
 // import React from "react"
 // import PropTypes from "prop-types"
 // import { StaticQuery, graphql } from "gatsby"
@@ -89,7 +76,6 @@ export default LayoutBase;
 // }
 //
 // export default Layout
-
 // ----------------- seo
 /**
  * SEO component that queries for data with
@@ -97,7 +83,6 @@ export default LayoutBase;
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
 // import React from "react"
 // import PropTypes from "prop-types"
 // import Helmet from "react-helmet"

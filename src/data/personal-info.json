@@ -1,0 +1,8 @@
+{
+  "name": "Dimitris Pliakos",
+  "description": ["Computer Science Student", "Web Developer"],
+  "image": {
+    "url": "https://el.gravatar.com/userimage/92207582/579272972306fb6cf76c2d326dba4faf.jpg",
+    "alt": "A photo containing dimitris."
+  }
+}

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/camelcase */
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -9,6 +9,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -36,6 +43,8 @@ module.exports = {
       options: {
         includePaths: [
           path.resolve(__dirname, "src", "components"),
+          path.resolve(__dirname, "src", "components", "layouts", "css-init"),
+          path.resolve(__dirname, "node_modules", "chroma-sass", "sass"),
           path.resolve(__dirname, "css"),
         ],
       },
@@ -44,4 +53,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

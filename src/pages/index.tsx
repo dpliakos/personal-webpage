@@ -1,7 +1,39 @@
-// import React from "react"
+import React from "react";
+import { graphql } from "gatsby";
+import Logger from "js-logger";
 
-import IndexPage from "./../components/pages/index/index"
-export default IndexPage
+import IndexPage from "./../components/pages/index/index";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const IndexWrapper = (props: any) => {
+  Logger.debug("IndexWrapperpropa", props);
+
+  const person = props.data.allDataJson.edges[0].node;
+
+  const headerData = {
+    person: person,
+  };
+
+  return <IndexPage headerData={headerData} />;
+};
+export default IndexWrapper;
+
+export const query = graphql`
+  {
+    allDataJson {
+      edges {
+        node {
+          name
+          description
+          image {
+            url
+            alt
+          }
+        }
+      }
+    }
+  }
+`;
 
 // import { Link } from "gatsby"
 //
