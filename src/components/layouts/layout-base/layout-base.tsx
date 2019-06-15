@@ -18,10 +18,12 @@ Logger.useDefaults();
 
 const LayoutBase = (props: LayoutBaseProps) => {
   return (
-    <div>
+    <div className="layout-base">
       <CSSPresets />
-      <Header headerData={props.headerData} />
-      {props.children}
+      <Header headerData={props.headerData} className="layout-base__header"/>
+      <section className="layout-base__content">
+        {props.children}
+      </section>
     </div>
   );
 };

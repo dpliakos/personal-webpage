@@ -1,22 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Logger from "js-logger";
 
-import IndexPage from "./../components/pages/index/index";
+import Page from "./../components/pages/index/index";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const IndexWrapper = (props: any) => {
-  Logger.debug("IndexWrapperpropa", props);
-
+const PageWrapper = (props: any) => {
   const person = props.data.allPersonalInfoJson.nodes[0];
 
   const headerData = {
     person: person,
   };
 
-  return <IndexPage headerData={headerData} />;
+  return <Page headerData={headerData} />;
 };
-export default IndexWrapper;
+export default PageWrapper;
 
 export const query = graphql`
   query {

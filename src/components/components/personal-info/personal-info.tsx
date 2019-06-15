@@ -45,7 +45,9 @@ const PersonaInfo = (props: PersonalInfoProps) => {
         <div className="personal-info__item personal-info__item--name">
           {props.person ? props.person.name : ""}
         </div>
-        <div className="personal-info__item personal-info__item--description">{description}</div>
+        <div className="personal-info__item personal-info__item--description">
+          {description}
+        </div>
       </div>
     </div>
   );
@@ -61,5 +63,5 @@ export const query = graphql`
       url
       alt
     }
-}
+  }
 `;

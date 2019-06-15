@@ -3,15 +3,20 @@ import { Link } from "gatsby";
 
 import "./navigation-bar.scss";
 
+interface NavigationItem {
+  label: string;
+  route: string;
+}
+
 const Navigationbar = () => {
-  const navlinks = [
+  const navlinks: NavigationItem[] = [
     {
       label: "About me",
       route: "/",
     },
     {
       label: "Education",
-      route: "/eduction",
+      route: "/education",
     },
     {
       label: "Open source",
@@ -39,10 +44,10 @@ const Navigationbar = () => {
     },
   ];
 
-  const navItems = navlinks.map((item, i) => {
+  const navItems = navlinks.map((item: NavigationItem, i: number) => {
     return (
-      <div className="navigation-bar__item-wrapper">
-        <Link to={item.route} key={i} className="navigation-bar__item">
+      <div className="navigation-bar__item-wrapper" key={i}>
+        <Link to={item.route} className="navigation-bar__item">
           {item.label}
         </Link>
       </div>
