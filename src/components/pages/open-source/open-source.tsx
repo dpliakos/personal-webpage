@@ -12,7 +12,13 @@ const OpenSourcePage = (props: any) => {
         Mozlla/OSSN
       </p>
       <p>
+        OpenSCN
+      </p>
+      <p>
         OpenSuse/OSEM
+      </p>
+      <p>
+        dpliakos/Dude
       </p>
     </LayoutStandardPage>
   );

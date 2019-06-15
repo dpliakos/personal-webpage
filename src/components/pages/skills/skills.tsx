@@ -5,13 +5,26 @@ import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-stan
 const SkillsPage = (props: any) => {
   return (
     <LayoutStandardPage headerData={props.headerData} title="Skills">
-      <p>
-        Front end dev: <br />
-        <ul>
-          <li>ReactJS</li>
-          <li> Sass </li>
-        </ul>
-      </p>
+      <div>
+        <h4> Languages </h4>
+        JS, Python, Java, PHP
+      </div>
+      <div>
+        <h4> Tecchnologies </h4>
+        ReactJs, NodeJs, Docker, Flite
+      </div>
+      <div>
+        <h4> Tecchnologies </h4>
+        ReactJs, NodeJs, Docker, Wordpress
+      </div>
+      <div>
+        <h4>Databases</h4>
+        MySQL, PSQl, MongoDB
+      </div>
+      <div>
+        <h4>OS</h4>
+        OpenSuse, Debian
+      </div>
     </LayoutStandardPage>
   );
 };

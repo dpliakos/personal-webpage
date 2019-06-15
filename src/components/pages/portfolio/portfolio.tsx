@@ -1,13 +1,15 @@
 import React from "react";
 
-import LayoutBase from "./../../layouts/layout-base/layout-base";
+import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-standard-page";
 
-const IndexPage = (props: any) => {
+const PortfolioPage = (props: any) => {
   return (
-    <LayoutBase headerData={props.headerData}>
-      <div> portfolio </div>
-    </LayoutBase>
+    <LayoutStandardPage headerData={props.headerData} >
+      //TODO: add OSSN <br />
+      //TODO: add OpenSCN <br />
+      //TODO: add Dude <br />
+    </LayoutStandardPage>
   );
 };
 
-export default IndexPage;
+export default PortfolioPage;
