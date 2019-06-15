@@ -14,10 +14,6 @@ const SkillsPage = (props: any) => {
         ReactJs, NodeJs, Docker, Flite
       </div>
       <div>
-        <h4> Tecchnologies </h4>
-        ReactJs, NodeJs, Docker, Wordpress
-      </div>
-      <div>
         <h4>Databases</h4>
         MySQL, PSQl, MongoDB
       </div>
