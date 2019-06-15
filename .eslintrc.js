@@ -1,22 +1,22 @@
 module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   extends: [
-    // "standard",
-    // 'eslint:recommended',
-    // 'plugin:react/recommended',
-    // 'plugin:@typescript-eslint/recommended',
-    // 'plugin:jsx-a11y/recommended',
-    // "prettier",
-    // 'prettier/@typescript-eslint',
-    // "prettier/react",
-    // "prettier/standard",
-    // "plugin:prettier/recommended",
-
+    "standard",
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:jsx-a11y/recommended',
+    "prettier",
     'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    "prettier/react",
+    "prettier/standard",
+    "plugin:prettier/recommended",
+
+    // 'eslint:recommended',
+    // 'plugin:react/recommended',
+    // 'plugin:@typescript-eslint/recommended',
+    // 'prettier/@typescript-eslint',
+    // 'plugin:prettier/recommended'
   ],
   settings: {
     react: {
@@ -46,7 +46,7 @@ module.exports = {
   },
   rules: {
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
-    '@typescript-eslint/explicit-function-return-type': 'off'
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
   overrides: [
     // Override some TypeScript rules just for .js files
