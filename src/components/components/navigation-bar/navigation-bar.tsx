@@ -41,9 +41,11 @@ const Navigationbar = () => {
 
   const navItems = navlinks.map((item, i) => {
     return (
-      <Link to={item.route} key={i} className="navigation-bar__item">
-        {item.label}
-      </Link>
+      <div className="navigation-bar__item-wrapper">
+        <Link to={item.route} key={i} className="navigation-bar__item">
+          {item.label}
+        </Link>
+      </div>
     );
   });
 

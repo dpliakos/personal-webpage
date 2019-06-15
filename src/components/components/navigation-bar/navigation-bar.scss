@@ -1,13 +1,37 @@
 @import "css-init";
 
 .navigation-bar {
+  @include margin-bottom(1);
   color: color("color-text-reverse"); 
   text-align: right;
 
+  &__item-wrapper {
+    display: block;
+  }
+
   &__item {
     @include typeset(hightlighted-text);
+    @include margin-top(0.5);
     color:color('color-text-reverse');
     text-decoration: none;
-    display: block;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: 2px;
+      background-color: color('red');
+      bottom: -2px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      transition: .2s ease-out;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
   }
 }

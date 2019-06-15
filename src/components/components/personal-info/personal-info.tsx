@@ -2,6 +2,8 @@ import React from "react";
 import Logger from "js-logger";
 import { graphql } from "gatsby";
 
+import "./personal-info.scss";
+
 export interface Person {
   name: string;
   description: string[];
@@ -40,10 +42,10 @@ const PersonaInfo = (props: PersonalInfoProps) => {
         />
       </div>
       <div className="personal-info__text">
-        <div className="personal-info__name">
+        <div className="personal-info__item personal-info__item--name">
           {props.person ? props.person.name : ""}
         </div>
-        <div className="personal-ingo__description">{description}</div>
+        <div className="personal-info__item personal-info__item--description">{description}</div>
       </div>
     </div>
   );

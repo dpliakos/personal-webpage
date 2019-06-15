@@ -34,7 +34,7 @@ $typestyles: (
     font-family: $legue-spartan,
   ),
   hightlighted-title: (
-    font-size: l,
+    font-size: xl,
     font-family: $arimo,
   ),
   hightlighted-text: (
@@ -47,7 +47,7 @@ $typestyles: (
   ),
 );
 
-$typey-debug: true;
+$typey-debug: false;
 $typey-debug-color: red;
 
 // note: leave it here for reference.

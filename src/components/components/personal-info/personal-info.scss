@@ -1,9 +1,23 @@
+@import 'css-init';
+
 .personal-info {
-  &__name {
-    display: block;
+
+  &__text{
+    @include margin-top(1);
+    @include margin-bottom(1);
   }
 
-  &__description-item {
+  &__item {
+    display: block;
+    @include typeset(hightlighted-text);
+    color: color("color-text-reverse"); 
+
+    &--name {
+      @include typeset(hightlighted-title);
+    }
+  }
+
+  &__description-line {
     display: block;
   }
 }
