@@ -4,15 +4,20 @@ import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-stan
 
 const ExperiencePage = (props: any) => {
   return (
-    <LayoutStandardPage headerData={props.headerData} title="Experience">
+    <LayoutStandardPage headerData={props.headerData} >
       <p>
-        Google Summer Of Code  - Etetoolkit/Treematcher
+        <a href="https://summerofcode.withgoogle.com/"> <b> Google Summer Of Code </b> </a>  <br />
+        <a href="https://github.com/etetoolkit/treematcher"> Etetoolkit/treematcher </a> tool. <br/>
+        A searching tool for data trees using 
+        regular expressions.
       </p>
       <p>
-        PointBlank
+        <a href="https://www.pointblank.gr/en"><b> PointBlank </b> </a> <br />
+        High end designs on Drupal 8 front-end and ReactJS apps
       </p>
       <p>
-        Bear in mind
+        <a href="https://www.bearinmind.gr/"> <b> Bear in mind </b> </a> <br />
+        Wordpress front-end. <br />  Apps using ReactJS and Flite php microframework
       </p>
     </LayoutStandardPage>
   );

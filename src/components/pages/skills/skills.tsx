@@ -4,7 +4,7 @@ import LayoutStandardPage from "./../../layouts/layout-standard-page/layout-stan
 
 const SkillsPage = (props: any) => {
   return (
-    <LayoutStandardPage headerData={props.headerData} title="Skills">
+    <LayoutStandardPage headerData={props.headerData} >
       <div>
         <h4> Languages </h4>
         JS, Python, Java, PHP

@@ -34,10 +34,10 @@ const Navigationbar = () => {
       label: "community",
       route: "/community",
     },
-    {
-      label: "portfolio",
-      route: "/portfolio",
-    },
+    // {
+    //   label: "portfolio",
+    //   route: "/portfolio",
+    // },
     {
       label: "contact",
       route: "/contact",

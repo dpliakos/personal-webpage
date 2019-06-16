@@ -7,8 +7,8 @@ const OpenSourcePage = (props: any) => {
     <LayoutStandardPage headerData={props.headerData}>
       <h4> Contact Info </h4>
       <ul>
-        <li> dimitrispl96@gmail.com </li>
-        <li> dpliakos@it.teithe.gr </li>
+        <li> <a href="mailto:dimitrispl96@gmail.com"> dimitrispl96@gmail.com </a> </li>
+        <li> <a href="mailto:dpliakos@it.teithe.gr"> dpliakos@it.teithe.gr </a> </li>
         <li> <a href="https://github.com/dPliakos/personal-webpage"> github  </a></li>
         <li> <a href="https://gitlab.com/dPliakos">gitlab </a> </li>
         <li> <a href="https://www.facebook.com/dimitris.pliakos.52"> Facebook </a> </li>
@@ -17,7 +17,7 @@ const OpenSourcePage = (props: any) => {
 
       <h4> Community channels </h4>
       <ul>
-        <li> Lambdaspace's mattermost @chat.lambdaspace.gr </li>
+        <li> <a href="https://chat.lambdaspace.gr/"> Lambdaspace's mattermost @chat.lambdaspace.gr </a> </li>
         <li> slack: OpenSCN </li>
         <li> slack: IEEE ATEITH SB</li>
         <li> slack: Drupal </li>
