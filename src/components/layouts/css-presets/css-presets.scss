@@ -1,4 +1,4 @@
-@import "./../css-init/css-init";
+@import "css-init";
 
 
 h1 {
@@ -7,4 +7,25 @@ h1 {
 
 p {
   @include typeset(text);
+}
+
+a {
+  color:color('color-text');
+  transition: .2s ease-out;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    left:0;
+    width: 25px;
+    background-color: color('secondary');
+  }
+
+  &:hover {
+    color: color('secondary');
+  }
 }

@@ -29,6 +29,8 @@
     }
 
     &:hover {
+      color:color('color-text-reverse');
+      
       &::before {
         width: 100%;
       }
