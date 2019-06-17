@@ -12,7 +12,7 @@ const IndexPage = (props: any) => {
       <p>I am member of Lambdaspace and IEEE ATEITH Student Branch.</p>
       <p>
         I tinker whatever is within my reach, from software to electronics, and
-        I love to learn new stuff. This is a build test 5.
+        I love to learn new stuff. This is a build test 6.
       </p>
     </LayoutStandardPage>
   );
