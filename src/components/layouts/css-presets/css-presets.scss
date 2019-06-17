@@ -1,15 +1,23 @@
 @import "css-init";
 
+* { 
+  @include typeset(text);
+  @include typeface(text);
+}
 
 h1 {
   @include typeset(super-title);
+  @include typeface(legue-spartan);
 }
 
 p {
   @include typeset(text);
+  @include typeface(text);
 }
 
 a {
+  @include typeset(text);
+  @include typeface(text);
   color:color('color-text');
   transition: .2s ease-out;
   text-decoration: none;

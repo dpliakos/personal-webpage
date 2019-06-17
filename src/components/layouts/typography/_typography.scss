@@ -47,6 +47,25 @@ $typestyles: (
   ),
 );
 
+
+$typefaces: (
+  legue-spartan: (
+    font-family: $legue-spartan,
+  ),
+  hightlighted-title: (
+    font-size: xl,
+    font-family: $arimo,
+  ),
+  hightlighted-text: (
+    font-size: m,
+    font-family: $arimo,
+  ),
+  text: (
+    font-size: m,
+    font-family: $cooper-hewitt-book,
+  ),
+);
+
 $typey-debug: false;
 $typey-debug-color: red;
 
