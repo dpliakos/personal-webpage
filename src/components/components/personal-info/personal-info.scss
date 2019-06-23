@@ -1,6 +1,11 @@
 @import 'css-init';
 
 .personal-info {
+  display: none;
+
+  @include breakpoint($desktop) {
+    display: block;
+  }
 
   &__image-wrapper {
     margin-left: auto;

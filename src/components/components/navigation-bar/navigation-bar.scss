@@ -2,11 +2,45 @@
 
 .navigation-bar {
   @include margin-bottom(1);
+  display: none;
   color: color("color-text-reverse"); 
-  text-align: right;
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    text-align: right;
+  }
+
+  &__header {
+    @include padding-top(1);
+    @include padding-right(1);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__burger-wrapper {
+    display: flex;
+    background-color: color('black');
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    @include breakpoint($desktop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    margin: auto;
+  }
 
   &__item-wrapper {
     display: block;
+    margin-top: 10px;
+
+    @include breakpoint($desktop) {
+    }
   }
 
   &__item {
@@ -35,5 +69,9 @@
         width: 100%;
       }
     }
+  }
+
+  &--open {
+    display: block;
   }
 }

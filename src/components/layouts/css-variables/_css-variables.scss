@@ -1,0 +1,24 @@
+// for colors and fonts refer to their own files.
+// for everything else, let's copy them from others :)
+// source for break points and gutters:
+// https://github.com/ossn/ossn-frontend/blob/master/src/components/base-styles/init/_variables.scss
+
+$mobile-small: 480px;
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$desktop-medium: 1056px;
+$desktop-large: 1200px;
+
+// Custom Grid Gutters.
+$gutters-mobile: 10px;
+$gutters-tablet: 20px;
+$gutters-desktop: 30px;
+
+$padding-mobile: 20px;
+$padding-tablet: 30px;
+$padding-desktop: 40px;
+
+
+// TODO: Replace the breakpoints with those
+// https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/

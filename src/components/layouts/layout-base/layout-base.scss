@@ -13,9 +13,19 @@ body {
 
 .layout-base {
   display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    flex-wrap: nowrap;
+  }
 
   &__content  {
-    width: 60%;
     display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include breakpoint($desktop) {
+      width: 60%;
+    }
   }
 }
