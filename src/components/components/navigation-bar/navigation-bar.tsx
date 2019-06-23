@@ -32,11 +32,11 @@ const navlinks: NavigationItem[] = [
     route: "/experience",
   },
   {
-    label: "skills",
+    label: "Skills",
     route: "/skills",
   },
   {
-    label: "community",
+    label: "Community",
     route: "/community",
   },
   // {
@@ -44,7 +44,7 @@ const navlinks: NavigationItem[] = [
   //   route: "/portfolio",
   // },
   {
-    label: "contact",
+    label: "Contact",
     route: "/contact",
   },
 ];
