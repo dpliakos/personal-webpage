@@ -43,6 +43,16 @@ $typestyles: (
   ),
   text: (
     font-size: m,
+    line-height: 30px,
+    font-family: $cooper-hewitt-book,
+  ),
+  text-small: (
+    font-size: s,
+    line-height: 15px,
+    font-family: $cooper-hewitt-book,
+  ),
+  text-small-highlighted: (
+    font-size: 18px,
     font-family: $cooper-hewitt-book,
   ),
 );
@@ -62,6 +72,14 @@ $typefaces: (
   ),
   text: (
     font-size: m,
+    font-family: $cooper-hewitt-book,
+  ),
+  text-small: (
+    font-size: s,
+    font-family: $cooper-hewitt-book,
+  ),
+  text-small-highlighted: (
+    font-size: 15px,
     font-family: $cooper-hewitt-book,
   ),
 );

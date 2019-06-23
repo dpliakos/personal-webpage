@@ -20,9 +20,14 @@ body {
   }
 
   &__content  {
+    @include padding-left($padding-mobile);
+    @include padding-right($padding-mobile);
+    @include padding-bottom(30px);
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 
     @include breakpoint($desktop) {
       width: 60%;

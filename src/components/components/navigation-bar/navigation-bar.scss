@@ -9,13 +9,18 @@
 
   @include breakpoint($desktop) {
     text-align: right;
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
   }
 
   &__header {
-    @include padding-top(1);
     @include padding-right(1);
     display: flex;
     justify-content: flex-end;
+    margin: auto;
   }
 
   &__burger-wrapper {

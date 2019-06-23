@@ -1,12 +1,13 @@
 @import "css-init";
 
 .header {
+  @include padding-left($padding-mobile);
+  @include padding-right($padding-mobile);
   background-color: color("primary");
   color: color("color-text-reverse");
+  width: 100%;  
   display: flex;
-  width: 100%;
-  // height: 50px;
-  
+
   
   @include breakpoint($desktop) {
     @include padding-right(2);
@@ -18,8 +19,19 @@
   }
 
   &__contents-wrapper {
+    @include margin-top(10px);
+    @include margin-bottom(10px);
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__personal-info {
+    flex-grow: 2;
+
+    @include breakpoint($desktop) {
+      width: 100%;
+    }
   }
 }

@@ -1,16 +1,27 @@
 @import 'css-init';
 
+/*
+ personal info is the section with the profile pictre, the name and the small
+ description that is appearing at the header.
+ It has different styles one for mobile and one for desktop. 
+*/
+
 .personal-info {
-  display: none;
+  display: flex;
 
   @include breakpoint($desktop) {
     display: block;
   }
 
   &__image-wrapper {
-    margin-left: auto;
-    width: 200px;
-    height: 200px;
+    width: 70px;
+    height: 70px;
+
+    @include breakpoint($desktop) {
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+    }
   }
 
   &__image {
@@ -21,25 +32,51 @@
   }
 
   &__text{
-    @include margin-top(1);
-    @include margin-bottom(1);
+    @include typeface(text-small);
+    @include padding-left(.5);
+
+    @include breakpoint($desktop) {
+      @include margin-top(1);
+      @include margin-bottom(1);
+      @include padding-left(0);
+    }
   }
 
   &__item {
-    display: block;
-    @include typeset(hightlighted-text);
+    @include typeset(text-small);
     color: color("color-text-reverse"); 
+    display: block;
+    
+
+    @include breakpoint($desktop) {
+      @include typeset(hightlighted-text);
+    }
 
     &--name {
-      @include typeset(hightlighted-title);
+      @include typeset(text-small-highlighted);
+      @include padding-top(.5);
+
+      @include breakpoint($desktop) {
+        @include typeset(hightlighted-title);
+      }
     }
 
     &--description {
+      @include typeset(text-small);
       @include padding-top(.5);
+
+      @include breakpoint($desktop) {
+        @include padding-top(.5);
+      }
     }
   }
 
   &__description-line {
     display: block;
+    @include typeset(text-small);
+
+    @include breakpoint($desktop) {
+      @include typeset(text);
+    }
   }
 }

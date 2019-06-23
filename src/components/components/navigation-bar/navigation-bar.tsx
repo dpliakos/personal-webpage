@@ -89,8 +89,9 @@ class NaviagationBar extends React.Component {
 
     Logger.debug(this.props);
 
+    // <div className="navigation-bar__wrapper">
     return (
-      <div className="navigation-bar__wrapper">
+      <>
         <div className="navigation-bar__header">
           <button className="navigation-bar__burger-wrapper" 
             onClick={() =>{this.toogleMenuBar()}}          
@@ -99,7 +100,7 @@ class NaviagationBar extends React.Component {
           </button>
         </div>
         <nav className={navigationBarClasses}>{navItems}</nav>
-      </div>
+      </>
     );
   }
 }
