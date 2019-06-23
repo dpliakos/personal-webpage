@@ -2,13 +2,15 @@
 
 * { 
   @include typeset(text);
+  font-family: 'Arial'; // TODO: Remove Arial and apply a better font.
 }
 
 h1 {
   @include typeset(super-title-small);
-
+  
   @include breakpoint($desktop) {
     @include typeset(super-title);    
+    // font-family: $legue-spartan !important;
   }
 }
 
