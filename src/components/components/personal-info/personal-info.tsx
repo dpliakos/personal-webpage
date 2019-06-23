@@ -3,6 +3,8 @@ import Logger from "js-logger";
 import { graphql } from "gatsby";
 
 import "./personal-info.scss";
+
+// @ts-ignore
 import ProfileImage from "./../../../images/profile.jpg";
 
 export interface Person {

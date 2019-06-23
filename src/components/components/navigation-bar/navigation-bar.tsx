@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-member-accessibility */
 import React from "react";
 import { Link } from "gatsby";
-import { Menu } from 'react-feather';
-import Logger from 'js-logger';
+import { Menu } from "react-feather";
 
 import "./navigation-bar.scss";
 
@@ -12,11 +11,10 @@ interface NavigationItem {
 }
 
 interface NaviagationBarState {
-  menuOpen: boolean
+  menuOpen: boolean;
 }
 
-
-const navlinks :NavigationItem[] = [
+const navlinks: NavigationItem[] = [
   {
     label: "About me",
     route: "/",
@@ -52,25 +50,28 @@ const navlinks :NavigationItem[] = [
 ];
 
 class NaviagationBar extends React.Component {
-
   constructor(props: {}) {
     super(props);
 
-    this.state as NaviagationBarState = {
-      menuOpen: false
-    }
+    this.state = {
+      menuOpen: false,
+    };
   }
 
   toogleMenuBar = () => {
-    const snapshot = {...this.state};
+    // TODO: find a solution
+    // @ts-ignore
+    const snapshot: NaviagationBarState = {
+      ...this.state,
+    };
 
     this.setState({
-      menuOpen: !snapshot.menuOpen
-    })
-  }
+      menuOpen: !snapshot.menuOpen,
+    });
+  };
 
   render() {
-    const snapshot: NaviagationBarState = { ...this.state };
+    const snapshot = { ...this.state };
 
     const navItems = navlinks.map((item: NavigationItem, i: number) => {
       return (
@@ -84,16 +85,19 @@ class NaviagationBar extends React.Component {
 
     const navigationBarClasses: string = [
       "navigation-bar",
+      // TODO: find a solution
+      // @ts-ignore
       snapshot.menuOpen ? "navigation-bar--open" : "",
     ].join(" ");
-
-    Logger.debug(this.props);
 
     return (
       <>
         <div className="navigation-bar__header">
-          <button className="navigation-bar__burger-wrapper" 
-            onClick={() =>{this.toogleMenuBar()}}          
+          <button
+            className="navigation-bar__burger-wrapper"
+            onClick={() => {
+              this.toogleMenuBar();
+            }}
           >
             <Menu color="white" className="navigation-bar__burger" />
           </button>
