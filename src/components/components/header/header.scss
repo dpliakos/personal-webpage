@@ -11,7 +11,7 @@
   
   @include breakpoint($desktop) {
     @include padding-right(2);
-    height: 100vh;
+    height: 100%;
     width: 40%;
     flex-direction: column;
     justify-content: center;
