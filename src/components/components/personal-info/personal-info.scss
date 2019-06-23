@@ -8,6 +8,7 @@
 
 .personal-info {
   display: flex;
+  flex-wrap: wrap;
 
   @include breakpoint($desktop) {
     display: block;

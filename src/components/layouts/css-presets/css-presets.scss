@@ -2,22 +2,23 @@
 
 * { 
   @include typeset(text);
-  @include typeface(text);
 }
 
 h1 {
-  @include typeset(super-title);
-  @include typeface(legue-spartan);
+  @include typeset(super-title-small);
+
+  @include breakpoint($desktop) {
+    @include typeset(super-title);    
+  }
 }
 
 p {
   @include typeset(text);
-  @include typeface(text);
 }
 
 a {
   @include typeset(text);
-  @include typeface(text);
+  // @include typeface(text);
   color:color('color-text');
   transition: .2s ease-out;
   text-decoration: none;

@@ -89,7 +89,6 @@ class NaviagationBar extends React.Component {
 
     Logger.debug(this.props);
 
-    // <div className="navigation-bar__wrapper">
     return (
       <>
         <div className="navigation-bar__header">

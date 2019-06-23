@@ -31,6 +31,12 @@ $cooper-hewitt-book: "Cooper Hewitt Book";
 $typestyles: (
   super-title: (
     font-size: xxl,
+    line-height: 75px,
+    font-family: $legue-spartan,
+  ),
+  super-title-small: (
+    font-size: xl,
+    line-height: 32px,
     font-family: $legue-spartan,
   ),
   hightlighted-title: (
