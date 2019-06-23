@@ -3,6 +3,11 @@
 * { 
   @include typeset(text);
   font-family: 'Arial'; // TODO: Remove Arial and apply a better font.
+
+  &::selection {
+    background-color: color('secondary');
+    color: color('color-text-reverse');
+  }
 }
 
 h1 {
