@@ -24,6 +24,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@types/react-helmet": "^5.0.8",
     "@typescript-eslint/eslint-plugin": "^1.10.2",
     "@typescript-eslint/parser": "^1.10.2",
     "breakpoint-sass": "^2.7.1",

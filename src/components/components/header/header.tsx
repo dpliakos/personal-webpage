@@ -13,6 +13,7 @@ export interface HeaderProps {
 }
 
 class Header extends React.PureComponent<HeaderProps, {}> {
+  // TODO: review the next line
   // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   render() {
     const person: Person = this.props.headerData.person;

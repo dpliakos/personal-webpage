@@ -6,6 +6,8 @@ import React from "react";
 import Logger from "js-logger";
 import CSSPresets from "./../css-presets/css-presets";
 import Header from "./../../components/header/header";
+import SEO from "./../seo/seo";
+
 import "./layout-base.scss";
 
 interface LayoutBaseProps {
@@ -14,14 +16,17 @@ interface LayoutBaseProps {
   headerData: any;
 }
 
+
 Logger.useDefaults();
 
 const LayoutBase = (props: LayoutBaseProps) => {
   return (
     <div className="layout-base">
+      <SEO />
       <CSSPresets />
+      <div />
       <Header headerData={props.headerData} className="layout-base__header" />
-      <section className="layout-base__content">{props.children}</section>
+      <main className="layout-base__content">{props.children}</main>
     </div>
   );
 };

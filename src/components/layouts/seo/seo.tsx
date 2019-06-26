@@ -10,7 +10,20 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title }) {
+// @ts-ignore
+import profileImage from "./../../../images/profile.jpg";
+
+interface SEOGraphItems {
+  description: string;
+  lang: string;
+  meta: {
+    name: string;
+    content: string;
+  };
+  title: string;
+}
+
+function SEO({ description, lang, meta, title }: SEOGraphItems) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -46,6 +59,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: profileImage,
         },
         {
           property: `og:type`,
