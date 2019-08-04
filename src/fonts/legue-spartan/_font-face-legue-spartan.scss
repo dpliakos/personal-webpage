@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'League Spartan';
-    src: url('/hinted-LeagueSpartan-Bold.eot');
-    src: url('/hinted-LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/hinted-LeagueSpartan-Bold.woff2') format('woff2'),
-        url('/hinted-LeagueSpartan-Bold.woff') format('woff'),
-        url('/hinted-LeagueSpartan-Bold.ttf') format('truetype');
+    src: url('./legue-spartan/hinted-LeagueSpartan-Bold.eot');
+    src: url('./legue-spartan/hinted-LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./legue-spartan/hinted-LeagueSpartan-Bold.woff2') format('woff2'),
+        url('./legue-spartan/hinted-LeagueSpartan-Bold.woff') format('woff'),
+        url('./legue-spartan/hinted-LeagueSpartan-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }

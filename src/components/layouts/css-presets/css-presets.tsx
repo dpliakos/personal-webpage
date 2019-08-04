@@ -5,6 +5,7 @@
 
 import React from "react";
 import "./css-presets.scss";
+import "./../../../fonts/fonts.scss";
 
 const CSSPresets = () => <></>;
 
