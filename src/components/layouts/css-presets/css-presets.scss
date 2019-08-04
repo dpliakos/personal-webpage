@@ -1,9 +1,6 @@
 @import "css-init";
 
-* { 
-  @include typeset(text);
-  font-family: 'Arial'; // TODO: Remove Arial and apply a better font.
-
+* {
   &::selection {
     background-color: color('secondary');
     color: color('color-text-reverse');
@@ -11,22 +8,23 @@
 }
 
 h1 {
+  @include typeface(legue-spartan);
   @include typeset(super-title-small);
   
   @include breakpoint($desktop) {
-    @include typeset(super-title);    
-    // font-family: $legue-spartan !important;
+    @include typeset(super-title);
   }
 }
 
 p {
+  @include typeface(cooper);
   @include typeset(text);
 }
 
 a {
+  @include typeface(cooper);
   @include typeset(text);
-  // @include typeface(text);
-  color:color('color-text');
+  color: color('color-text');
   transition: .2s ease-out;
   text-decoration: none;
   position: relative;

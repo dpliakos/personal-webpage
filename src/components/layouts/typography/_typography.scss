@@ -21,6 +21,7 @@ html {
   @include define-type-sizing;
 }
 
+//  Add the available fonts.
 $helvetica: Helvetica, sans-serif;
 $garamond: Garamond, serif;
 $monaco: Monaco, monospace, monospace;
@@ -28,65 +29,47 @@ $arimo: "Arimo";
 $legue-spartan: "League Spartan";
 $cooper-hewitt-book: "Cooper Hewitt Book";
 
+
+// Declare typefaces.
+$typefaces: (
+  legue-spartan: (
+    font-family: $legue-spartan
+  ),
+  arimo: (
+    font-family: $arimo
+  ),
+  cooper: (
+    font-family: $cooper-hewitt-book
+  )
+);
+
+
+// Declare typestyles.
 $typestyles: (
   super-title: (
     font-size: xxl,
     line-height: 75px,
-    font-family: $legue-spartan,
   ),
   super-title-small: (
     font-size: xl,
-    line-height: 32px,
-    font-family: $legue-spartan,
+    line-height: 32px
   ),
   hightlighted-title: (
     font-size: xl,
-    font-family: $arimo,
   ),
   hightlighted-text: (
     font-size: m,
-    font-family: $arimo,
   ),
   text: (
     font-size: m,
     line-height: 30px,
-    font-family: $cooper-hewitt-book,
   ),
   text-small: (
     font-size: s,
     line-height: 15px,
-    font-family: $cooper-hewitt-book,
   ),
   text-small-highlighted: (
     font-size: 18px,
-    font-family: $cooper-hewitt-book,
-  ),
-);
-
-
-$typefaces: (
-  legue-spartan: (
-    font-family: $legue-spartan,
-  ),
-  hightlighted-title: (
-    font-size: xl,
-    font-family: $arimo,
-  ),
-  hightlighted-text: (
-    font-size: m,
-    font-family: $arimo,
-  ),
-  text: (
-    font-size: m,
-    font-family: $cooper-hewitt-book,
-  ),
-  text-small: (
-    font-size: s,
-    font-family: $cooper-hewitt-book,
-  ),
-  text-small-highlighted: (
-    font-size: 15px,
-    font-family: $cooper-hewitt-book,
   ),
 );
 

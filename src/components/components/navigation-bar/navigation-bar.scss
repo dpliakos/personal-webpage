@@ -49,6 +49,7 @@
   }
 
   &__item {
+    @include typeface(arimo);
     @include typeset(hightlighted-text);
     @include margin-top(0.5);
     color:color('color-text-reverse');
