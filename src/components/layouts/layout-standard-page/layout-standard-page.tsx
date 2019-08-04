@@ -21,7 +21,7 @@ const LayoutStandardPage = (props: StandardPageProps) => {
   };
 
   return (
-    <LayoutBase headerData={props.headerData}>
+    <LayoutBase headerData={props.headerData} tilte={props.title}>
       <article className="layout-standard-page">
         <div className="layout-standard-page__content">
           {props.title && getHeader()}

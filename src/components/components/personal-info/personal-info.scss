@@ -33,7 +33,8 @@
   }
 
   &__text{
-    @include typeface(text-small);
+    @include typeface(cooper);
+    @include typeset(text-small);
     @include padding-left(.5);
 
     @include breakpoint($desktop) {
@@ -44,12 +45,14 @@
   }
 
   &__item {
+    @include typeface(cooper);
     @include typeset(text-small);
     color: color("color-text-reverse"); 
     display: block;
     
 
     @include breakpoint($desktop) {
+      @include typeface(arimo);
       @include typeset(hightlighted-text);
     }
 
@@ -63,6 +66,7 @@
     }
 
     &--description {
+      @include typeface(cooper);
       @include typeset(text-small);
       @include padding-top(.5);
 
@@ -73,9 +77,10 @@
   }
 
   &__description-line {
-    display: block;
+    @include typeface(cooper);
     @include typeset(text-small);
-
+    display: block;
+    
     @include breakpoint($desktop) {
       @include typeset(text);
     }

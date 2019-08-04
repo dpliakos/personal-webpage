@@ -14,6 +14,7 @@ interface LayoutBaseProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children: any;
   headerData: any;
+  title ?: string;
 }
 
 
@@ -22,7 +23,7 @@ Logger.useDefaults();
 const LayoutBase = (props: LayoutBaseProps) => {
   return (
     <div className="layout-base">
-      <SEO />
+      <SEO title={props.title} />
       <CSSPresets />
       <div />
       <Header headerData={props.headerData} className="layout-base__header" />

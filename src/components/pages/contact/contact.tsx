@@ -9,10 +9,10 @@ const OpenSourcePage = (props: any) => {
       <ul>
         <li> <a href="mailto:dimitrispl96@gmail.com"> dimitrispl96@gmail.com </a> </li>
         <li> <a href="mailto:dpliakos@it.teithe.gr"> dpliakos@it.teithe.gr </a> </li>
-        <li> <a href="https://github.com/dPliakos/personal-webpage"> github  </a></li>
-        <li> <a href="https://gitlab.com/dPliakos">gitlab </a> </li>
+        <li> <a href="https://github.com/dPliakos/personal-webpage"> Github  </a></li>
+        <li> <a href="https://gitlab.com/dPliakos"> Gitlab </a> </li>
         <li> <a href="https://www.facebook.com/dimitris.pliakos.52"> Facebook </a> </li>
-        <li> <a href="https://twitter.com/Dimitris_Pl"> twitter </a> </li>
+        <li> <a href="https://twitter.com/Dimitris_Pl"> Twitter </a> </li>
       </ul>
 
       <h4> Community channels </h4>
