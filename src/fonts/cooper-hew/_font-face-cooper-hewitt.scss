@@ -1,32 +1,32 @@
 @font-face {
     font-family: 'Cooper Hewitt Book';
-    src: url('/hinted-CooperHewitt-Book.eot');
-    src: url('/hinted-CooperHewitt-Book.eot?#iefix') format('embedded-opentype'),
-        url('/hinted-CooperHewitt-Book.woff2') format('woff2'),
-        url('/hinted-CooperHewitt-Book.woff') format('woff'),
-        url('/hinted-CooperHewitt-Book.ttf') format('truetype');
+    src: url('./cooper-hew/hinted-CooperHewitt-Book.eot');
+    src: url('./cooper-hew/hinted-CooperHewitt-Book.eot?#iefix') format('embedded-opentype'),
+        url('./cooper-hew/hinted-CooperHewitt-Book.woff2') format('woff2'),
+        url('./cooper-hew/hinted-CooperHewitt-Book.woff') format('woff'),
+        url('./cooper-hew/hinted-CooperHewitt-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('/hinted-CooperHewitt-Bold.eot');
-    src: url('/hinted-CooperHewitt-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/hinted-CooperHewitt-Bold.woff2') format('woff2'),
-        url('/hinted-CooperHewitt-Bold.woff') format('woff'),
-        url('/hinted-CooperHewitt-Bold.ttf') format('truetype');
+    src: url('./cooper-hew/hinted-CooperHewitt-Bold.eot');
+    src: url('./cooper-hew/hinted-CooperHewitt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./cooper-hew/hinted-CooperHewitt-Bold.woff2') format('woff2'),
+        url('./cooper-hew/hinted-CooperHewitt-Bold.woff') format('woff'),
+        url('./cooper-hew/hinted-CooperHewitt-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('/hinted-CooperHewitt-Medium.eot');
-    src: url('/hinted-CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/hinted-CooperHewitt-Medium.woff2') format('woff2'),
-        url('/hinted-CooperHewitt-Medium.woff') format('woff'),
-        url('/hinted-CooperHewitt-Medium.ttf') format('truetype');
+    src: url('./cooper-hew/hinted-CooperHewitt-Medium.eot');
+    src: url('./cooper-hew/hinted-CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./cooper-hew/hinted-CooperHewitt-Medium.woff2') format('woff2'),
+        url('./cooper-hew/hinted-CooperHewitt-Medium.woff') format('woff'),
+        url('./cooper-hew/hinted-CooperHewitt-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
