@@ -22,5 +22,10 @@ export const query = graphql`
         ...PersonalInfo
       }
     }
+    allSocialMediaJson {
+      nodes {
+        ...FragmentSocialMedia
+      }
+    }
   }
 `;

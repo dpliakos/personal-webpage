@@ -1,0 +1,24 @@
+@import 'css-init';
+
+.social-media-bar {
+  display: flex;
+
+  @include breakpoint($desktop)  {
+    justify-content: flex-end;
+  }
+
+  &__item {
+    color: color('white');
+    display: flex;
+    width: 40px;
+    height: 40px;
+    
+    &::before {
+      content: none;
+    }
+  }
+
+  &__icon  {
+    margin: auto;
+  }
+}
