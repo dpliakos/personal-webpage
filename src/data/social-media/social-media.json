@@ -1,0 +1,30 @@
+{
+  "social-media": [
+    {
+      "medium": "facebook",
+      "label": "Facebook",
+      "link": "https://www.facebook.com/dimitris.pliakos.52",
+      "icon": "facebook"
+    }, {
+      "medium": "twitter",
+      "label": "Twitter",
+      "link": "https://twitter.com/Dimitris_Pl",
+      "icon": "twitter"
+    }, {
+      "medium": "linked-in",
+      "label": "Linked In",
+      "link": "https://www.linkedin.com/in/dimitris-pliakos-847b2291/",
+      "icon": "linked-in"
+    }, {
+      "medium": "email-personal",
+      "label": "Personal email",
+      "link": "mailto:dimitrispl96@gmail.com",
+      "icon": "mail"
+    }, {
+      "medium": "email-academic",
+      "label": "Academic",
+      "link": "mailto:it154524@it.teithe.gr",
+      "icon": "mail"
+    }
+  ]
+}
