@@ -68,13 +68,16 @@
       transition: .2s ease-out;
     }
 
-    &:hover {
+    &:hover,
+    &--active {
       color:color('color-text-reverse');
       
       &::before {
         width: 100%;
       }
     }
+
+    
   }
 
   &--open {
