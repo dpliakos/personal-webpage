@@ -79,8 +79,9 @@ class NaviagationBar extends React.Component {
 
     const navItems = navlinks.map((item: NavigationItem, i: number) => {
       const currentLocation = this.props.location.pathname;
-      const isActive = currentLocation === `${item.route}`
-      // const isActive = currentLocation.indexOf(item.route) >= 0;
+      const isActive = currentLocation === item.route 
+                      || currentLocation === `${item.route}/`;
+
       const classes = ["navigation-bar__item"];
 
       if (isActive) {
