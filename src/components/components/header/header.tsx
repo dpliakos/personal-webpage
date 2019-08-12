@@ -9,6 +9,7 @@ import "./header.scss";
 export interface HeaderProps {
   className: string;
   headerData: {
+    location: any;
     person: Person;
     socialMedia: [SocialMedia];
   };
@@ -28,7 +29,7 @@ class Header extends React.PureComponent<HeaderProps, {}> {
             <PersonalInfo person={person} />
             <SocialMediaBar socialMedia={this.props.headerData.socialMedia} />
           </div>
-          <NavigationBar />
+          <NavigationBar location={this.props.headerData.location} />
         </div>
       </header>
     );

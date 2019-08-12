@@ -10,6 +10,10 @@ interface NavigationItem {
   route: string;
 }
 
+interface NaviagationBarProps {
+  location: any;
+}
+
 interface NaviagationBarState {
   menuOpen: boolean;
 }
@@ -50,7 +54,7 @@ const navlinks: NavigationItem[] = [
 ];
 
 class NaviagationBar extends React.Component {
-  constructor(props: {}) {
+  constructor(props: NaviagationBarProps) {
     super(props);
 
     this.state = {
@@ -74,9 +78,21 @@ class NaviagationBar extends React.Component {
     const snapshot = { ...this.state };
 
     const navItems = navlinks.map((item: NavigationItem, i: number) => {
+      const currentLocation = this.props.location.pathname;
+      const isActive = currentLocation === `${item.route}`
+      // const isActive = currentLocation.indexOf(item.route) >= 0;
+      const classes = ["navigation-bar__item"];
+
+      if (isActive) {
+        classes.push("navigation-bar__item--active");
+      }
+
+      const className=classes.join(" ");
+
+
       return (
         <div className="navigation-bar__item-wrapper" key={i}>
-          <Link to={item.route} className="navigation-bar__item">
+          <Link to={item.route} className={className}>
             {item.label}
           </Link>
         </div>
