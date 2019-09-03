@@ -14,6 +14,7 @@ import gatsbyIcon from "./../../../images/icons/gatsby.png";
 import angularIcon from "./../../../images/icons/angular.png";
 import flaskIcon from "./../../../images/icons/flask.png";
 import graphqlIcon from "./../../../images/icons/graphql.png";
+import sassIcon from "./../../../images/icons/sass.png";
 
 import dockerIcon from "./../../../images/icons/docker.png";
 import dockerComposeIcon from "./../../../images/icons/docker-compose.png";
@@ -74,6 +75,9 @@ const SkillsPage = (props: any) => {
         }, {
           title: "graphQL",
           icon: graphqlIcon
+        }, {
+          title: "Sass",
+          icon: sassIcon
         }
       ]
     }, {
