@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Facebook, Twitter, Linkedin, Mail } from 'react-feather';
+import SocialMediaList from './../social-media-list/social-media-list';
 
 import './social-media-bar.scss';
 
@@ -50,15 +51,21 @@ const SocialMediaItem: any = (props: SocialMediaItemProps) => {
 }
 
 const SocialMediaBar = (props: ScoailMediaBarProps) =>  {
-  const media = props.socialMedia.map((item, i) => {
+  const media = props.socialMedia.filter((item) => {
+    return item.medium !== 'email';
+  }).map((item, i) => {
     const mediaItem = <SocialMediaItem item={item} key={i} />;
     return mediaItem;
   });
 
+  const mails = props.socialMedia.filter((item) => {
+    return item.medium === 'email';
+  });
 
   return (
     <div className="social-media-bar">
       {media}
+      <SocialMediaList icon={Mail} items={mails} />
     </div>
   );
 }
