@@ -1,6 +1,6 @@
 import React from "react";
-import Logger from "js-logger";
 import { graphql } from "gatsby";
+import Img from "gatsby-image"
 
 import "./personal-info.scss";
 
@@ -18,11 +18,10 @@ export interface Person {
 
 export interface PersonalInfoProps {
   person: Person;
+  imageSharp:any;
 }
 
 const PersonaInfo = (props: PersonalInfoProps) => {
-  Logger.debug("PersonalInfoProps--: ", props);
-
   const description = props.person.description.map(
     (item: string, i: number) => {
       return (
@@ -36,14 +35,21 @@ const PersonaInfo = (props: PersonalInfoProps) => {
   return (
     <div className="personal-info">
       <div className="personal-info__image-wrapper">
-        <img
+        <Img 
+          className="personal-info__image"
+          fixed={props.imageSharp.fixed}
+          alt={
+            props.person && props.person.image.alt ? props.person.image.alt : ""
+          }
+        />
+        {/*<img
           className="personal-info__image"
           // src={props.person ? props.person.image.url : ""}
           src={ProfileImage}
           alt={
             props.person && props.person.image.alt ? props.person.image.alt : ""
           }
-        />
+        />*/}
       </div>
       <div className="personal-info__text">
         <div className="personal-info__item personal-info__item--name">

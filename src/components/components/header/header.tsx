@@ -12,6 +12,7 @@ export interface HeaderProps {
     location: any;
     person: Person;
     socialMedia: [SocialMedia];
+    imageSharp?: any;
   };
 }
 
@@ -26,7 +27,7 @@ class Header extends React.PureComponent<HeaderProps, {}> {
       <header role="banner" className={classes}>
         <div className="header__contents-wrapper">
           <div className="header__personal-info">
-            <PersonalInfo person={person} />
+            <PersonalInfo person={person} imageSharp={this.props.headerData.imageSharp} />
             <SocialMediaBar socialMedia={this.props.headerData.socialMedia} />
           </div>
           <NavigationBar location={this.props.headerData.location} />
