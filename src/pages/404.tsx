@@ -8,12 +8,15 @@ const PageWrapper = (props: any) => {
   const location = props.location;
   const person = props.data.allPersonalInfoJson.nodes[0];
   const socialMedia = props.data.allSocialMediaJson.nodes[0].social_media;
+  const imageSharp = props.data.file.childImageSharp;
 
   const headerData = {
     location,
     person,
-    socialMedia
+    socialMedia,
+    imageSharp
   };
+
 
   return <NotFound headerData={headerData} />;
 };
@@ -30,6 +33,14 @@ export const query = graphql`
     allSocialMediaJson {
       nodes {
         ...FragmentSocialMedia
+      }
+    }
+
+    file(relativePath: { eq: "images/profile.jpg" }) {
+      childImageSharp {
+        fixed(width: 500, height: 500) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
   }
