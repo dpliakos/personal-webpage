@@ -1,0 +1,62 @@
+@import "./../social-media-bar/social-media-bar.scss";
+
+.social-media-list {
+  @extend %social-media-bar__item;
+  display: flex;
+  position: relative;
+  
+  &:hover {
+    cursor: pointer;
+
+    .social-media-list__button {
+      color: color('red');
+    }
+  }
+
+  &__list-wrapper {
+    position: absolute;
+    right: -180px;
+    display: none;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    padding: 10px;
+  }
+  
+
+  &__button {    
+    background-color: transparent;
+    border: none;
+    color: color('white');
+    margin:auto;
+    padding: 0;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+    svg {
+      margin-top: 4px;
+    }
+  }
+  
+  &--expanded {
+    .social-media-list__list-wrapper {
+      display: block;
+      background-color: color('black');
+
+      a {
+        color: color('white');
+
+        &:hover {
+          color: color('red');
+        }
+
+        &::before {
+          content: unset;
+        }
+      }
+    }
+ }
+}

@@ -16,14 +16,19 @@
       "link": "https://www.linkedin.com/in/dimitris-pliakos-847b2291/",
       "icon": "linked-in"
     }, {
-      "medium": "email-personal",
+      "medium": "email",
       "label": "Personal email",
       "link": "mailto:dimitrispl96@gmail.com",
       "icon": "mail"
     }, {
-      "medium": "email-academic",
+      "medium": "email",
       "label": "Academic email",
       "link": "mailto:it154524@it.teithe.gr",
+      "icon": "mail"
+    }, {
+      "medium": "email",
+      "label": "Auth email",
+      "link": "mailto:dpliakos@it.auth.gr",
       "icon": "mail"
     }
   ]
