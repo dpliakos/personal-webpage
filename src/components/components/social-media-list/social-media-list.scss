@@ -42,6 +42,10 @@
   }
   
   &--expanded {
+    .social-media-list__button {
+      color: color('red');
+    }
+
     .social-media-list__list-wrapper {
       display: block;
       background-color: color('black');
