@@ -1,0 +1,17 @@
+image: "node:jessie"
+
+stages:
+  - build
+
+before_script:
+  - apt install python make g++ 
+  - npm install 
+
+build:
+  stage:
+    build
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm run build
