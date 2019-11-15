@@ -3,6 +3,9 @@ import React from "react";
 import LayoutBase from "./../layout-base/layout-base";
 import HeaderProps from "./../../components/header/header";
 
+import * as Sentry from '@sentry/browser';
+Sentry.init({dsn: "https://6bee82ab4bf54a8290cdfdb00e7b38bb@sentry.io/1821085"});
+
 import "./layout-standard-page.scss";
 
 interface StandardPageProps {
