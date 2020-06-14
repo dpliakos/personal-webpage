@@ -1,15 +1,15 @@
 {
   "social-media": [
     {
-      "medium": "facebook",
-      "label": "Facebook",
-      "link": "https://www.facebook.com/dimitris.pliakos.52",
-      "icon": "facebook"
+      "medium": "Gitlab",
+      "label": "Gitlab",
+      "link": "https://gitlab.com/dpliakos",
+      "icon": "gitlab"
     }, {
-      "medium": "twitter",
-      "label": "Twitter",
-      "link": "https://twitter.com/Dimitris_Pl",
-      "icon": "twitter"
+      "medium": "github",
+      "label": "Github",
+      "link": "https://github.com/dpliakos",
+      "icon": "github"
     }, {
       "medium": "linked-in",
       "label": "Linked In",
