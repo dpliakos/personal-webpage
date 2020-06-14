@@ -20,7 +20,7 @@ const PageWrapper = (props: any) => {
   };
 
   return <Page headerData={headerData} />;
-}; 
+};
 export default PageWrapper;
 
 export const query = graphql`
@@ -30,7 +30,7 @@ export const query = graphql`
         ...PersonalInfo
       }
     }
-    
+
     allSocialMediaJson {
       nodes {
         ...FragmentSocialMedia
