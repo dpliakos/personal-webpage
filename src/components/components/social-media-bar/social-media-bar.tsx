@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Facebook, Twitter, Linkedin, Mail } from 'react-feather';
+import { Facebook, Twitter, Linkedin, Mail, GitHub, Gitlab } from 'react-feather';
 import SocialMediaList from './../social-media-list/social-media-list';
 
 import './social-media-bar.scss';
@@ -23,13 +23,13 @@ interface ScoailMediaBarProps {
 const SocialMediaItem: any = (props: SocialMediaItemProps) => {
   // todo add a better implementation
   let icon = null;
-  
+
   const iconProps = {
     strokeWidth: "1.5",
     className: "social-media-bar__icon"
   }
 
-  if (props.item.icon) { 
+  if (props.item.icon) {
     switch(props.item.icon) {
       case 'facebook': icon = <Facebook {...iconProps} />;
       break;
@@ -39,12 +39,21 @@ const SocialMediaItem: any = (props: SocialMediaItemProps) => {
       break;
       case 'mail': icon = <Mail  {...iconProps} />;
       break;
+      case 'github': icon = <GitHub {...iconProps} />;
+      break;
+      case 'gitlab': icon = <Gitlab {...iconProps} />;
+      break;
       default: icon = null;
     }
   }
 
   return (
-    <a href={props.item.link} className="social-media-bar__item" title={props.item.label}>
+    <a
+      href={props.item.link}
+      target="_blank"
+      className="social-media-bar__item"
+      title={props.item.label}
+    >
       {icon}
     </a>
   );
