@@ -41,7 +41,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-standard": "^4.0.1",
-    "gatsby-plugin-typescript": "^2.4.6",
+    "gatsby-plugin-typescript": "^2.4.8",
     "husky": "^2.7.0",
     "js-logger": "^1.6.0",
     "lint-staged": "^8.2.1",

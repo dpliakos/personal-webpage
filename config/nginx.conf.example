@@ -1,0 +1,40 @@
+server {
+  listen 80 default_server;
+  listen SED_VAR_DOMAIN:80 default_server;
+  server_name SED_VAR_DOMAIN;
+  return 301 SED_VAR_DOMAIN$request_uri;
+  error_page 404 /index.html;
+  #  error_log    /var/logs/nginx/dpliakos.gr.log debug;
+}
+
+server {
+  listen SED_VAR_DOMAIN:443 ssl http2;
+  root /var/www/html;
+  error_page 404 /index.html;
+
+  index index.html index.htm index.nginx-debian.html;
+        
+  ssl on;
+  server_name SED_VAR_DOMAIN;
+  ssl_certificate /run/sevrets/fullchain.pem;
+  ssl_certificate_key /run/secrets/privkey.pem;
+
+  # enable gzip compression
+  gzip on;
+  gzip_buffers 4 32k;
+  gzip_types text/plain application/x-javascript text/xml text/css text/javascript application/javascript;
+  gzip_vary on;
+  # gzip_min_length  1100;
+  # end gzip configuration
+
+  location ~* \.(js|css|png|jpg|jpeg|gif|ico|woff2)$ {
+    expires 2d;
+    add_header Cache-Control "public, no-transform";
+  }
+    
+  location / {
+    # First attempt to serve request as file, then
+    # as directory, then fall back to displaying a 404.
+    try_files $uri $uri/ =404;
+  }
+}
